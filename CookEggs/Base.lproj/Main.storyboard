@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CookEggs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EggBC" translatesAutoresizingMaskIntoConstraints="NO" id="z4n-tN-Qs4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xUN-Mi-JUV">
+                                <rect key="frame" x="20" y="244" width="374" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlC-Bf-ckq">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="130"/>
+                                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Soft" image="soft_egg"/>
+                                        <connections>
+                                            <action selector="clickOnEggs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OPO-i7-OJt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJp-XM-Xse">
+                                        <rect key="frame" x="128" y="0.0" width="118" height="130"/>
+                                        <color key="backgroundColor" red="1" green="0.76115018129348755" blue="0.13987267017364502" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Medium" image="medium_egg"/>
+                                        <connections>
+                                            <action selector="clickOnEggs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Toq-eD-TqF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iA-CF-VBO">
+                                        <rect key="frame" x="256" y="0.0" width="118" height="130"/>
+                                        <color key="backgroundColor" red="1" green="0.91439551115036011" blue="0.66711193323135376" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Hard" image="hard_egg"/>
+                                        <connections>
+                                            <action selector="clickOnEggs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TC9-Hj-WB4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Cao-jh-8E8"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose level of BOIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rnl-4i-Q1u">
+                                <rect key="frame" x="20" y="84" width="374" height="120"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zss-ct-2mL">
+                                <rect key="frame" x="20" y="755" width="374" height="87"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YAB-oK-fSm">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="time remaining is: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTG-SF-5dU">
+                                                <rect key="frame" x="0.0" y="0.0" width="346" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc8-I5-4Hm">
+                                                <rect key="frame" x="356" y="0.0" width="18" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-Ya-l4h">
+                                        <rect key="frame" x="0.0" y="53.5" width="374" height="33.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="progressTintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zss-ct-2mL" secondAttribute="trailing" constant="20" id="3rM-er-o4L"/>
+                            <constraint firstItem="xUN-Mi-JUV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="7gR-Dy-obg"/>
+                            <constraint firstAttribute="bottom" secondItem="z4n-tN-Qs4" secondAttribute="bottom" id="Aah-Ed-f4S"/>
+                            <constraint firstItem="zss-ct-2mL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="C7i-c8-eUv"/>
+                            <constraint firstItem="Rnl-4i-Q1u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Iq3-Ih-1OX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rnl-4i-Q1u" secondAttribute="trailing" constant="20" id="KmY-Gb-fKk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zss-ct-2mL" secondAttribute="bottom" constant="20" id="Sen-U5-m91"/>
+                            <constraint firstItem="xUN-Mi-JUV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Z2Y-NE-ZDd"/>
+                            <constraint firstAttribute="trailing" secondItem="xUN-Mi-JUV" secondAttribute="trailing" constant="20" id="bxh-6D-dKv"/>
+                            <constraint firstItem="z4n-tN-Qs4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h63-Y5-XHa"/>
+                            <constraint firstItem="xUN-Mi-JUV" firstAttribute="top" secondItem="Rnl-4i-Q1u" secondAttribute="bottom" constant="40" id="hA4-qu-XcI"/>
+                            <constraint firstItem="z4n-tN-Qs4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qLX-qA-kE6"/>
+                            <constraint firstAttribute="trailing" secondItem="z4n-tN-Qs4" secondAttribute="trailing" id="qXc-eq-blm"/>
+                            <constraint firstItem="Rnl-4i-Q1u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zY0-cr-Asd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="Rnl-4i-Q1u" id="QRA-RX-KjP"/>
+                        <outlet property="progressBar" destination="b8m-Ya-l4h" id="XWj-5t-xu1"/>
+                        <outlet property="timeLabel" destination="kc8-I5-4Hm" id="7mV-4J-GX2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EggBC" width="1200" height="2133"/>
+        <image name="hard_egg" width="287.5" height="366"/>
+        <image name="medium_egg" width="288" height="363"/>
+        <image name="soft_egg" width="287" height="365"/>
+    </resources>
+</document>
